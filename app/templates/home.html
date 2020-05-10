@@ -1,0 +1,20 @@
+{% extends "base.html" %} {% block content %}
+<div style="margin-top:50px">
+  <img class="mb-4" src="static/images/Coderschool.png" alt="" />
+  <img class="mb-4" src="static/images/Fulbright.png" alt="" />
+  <h1 class="h3 mb-3 font-weight-normal">Please draw a number</h1>
+ 
+  <canvas id="canvas" width="400" height="400" style="border:1px solid #000000;"></canvas>
+ 
+  <h1 class="h3 mb-3 font-weight-normal" id="result">Prediction:</h1>
+ 
+  <button id="myButton" class="btn  btn-primary " type="submit">
+    Predict
+  </button>
+  <button id="clearButton" class="btn btn-success" type="submit">
+    Clear
+  </button>
+ 
+  <p class="mt-5 mb-3 text-muted">&copy; CoderSchool ft. Fulbright</p>
+</div>
+{% endblock %}
